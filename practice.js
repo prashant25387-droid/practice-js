@@ -5,21 +5,21 @@ function selectitems(item){
         case "coffee":
             price = 20
             break
-    }
-    switch(item){
+    
         case "sandwiches":
             price = 40
             break 
-    }
-    switch(item){
+    
         case "Salad":
             price =50
             break
-    }
-    switch(item){
+    
         case "lemon cake":
             price = 70
             break
+
+        default:
+            return `Sorry,we don't sell ${item}`
     }
 
     return `You selected ${item}. That will be ₹${price}`
